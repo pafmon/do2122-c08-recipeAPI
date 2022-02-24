@@ -1,19 +1,18 @@
 'use strict'
 
 module.exports.findRecipeByrecipeId = function findRecipeByrecipeId(req, res, next) {
-  res.send({
-    message: 'This is the mockup controller for findRecipeByrecipeId'
+  res.send( {
+    recipeId: "g",
+    description: "d",
+    ingredients: "i",
+    complexity: 1
   });
 };
 
 module.exports.deleteRecipe = function deleteRecipe(req, res, next) {
-  res.send({
-    message: 'This is the mockup controller for deleteRecipe'
-  });
+  res.sendStatus(200);
 };
 
 module.exports.updateRecipe = function updateRecipe(req, res, next) {
-  res.send({
-    message: 'This is the mockup controller for updateRecipe'
-  });
+  res.sendStatus(200);
 };
