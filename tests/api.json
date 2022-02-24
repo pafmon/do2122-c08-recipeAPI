@@ -548,7 +548,7 @@
             "type": "text/javascript",
             "exec": [
               "// Validate status 2xx \npm.test(\"[DELETE]::/api/v1/recipes/:recipeId - Status code is 2xx\", function () {\n   pm.response.to.be.success;\n});\n",
-              "// Validate if response has empty Body \npm.test(\"[DELETE]::/api/v1/recipes/:recipeId - Response has empty Body\", function () {\n    pm.response.to.not.be.withBody;\n});\n"
+              "// Validate if response has empty Body \npm.test(\"[DELETE]::/api/v1/recipes/:recipeId - Response has empty Body\", function () {\n  pm.response.to.have.body(\"\\\"Ok\\\"\");\n});\n"
             ]
           }
         }
@@ -724,7 +724,7 @@
             "type": "text/javascript",
             "exec": [
               "// Validate status 2xx \npm.test(\"[PUT]::/api/v1/recipes/:recipeId - Status code is 2xx\", function () {\n   pm.response.to.be.success;\n});\n",
-              "// Validate if response has empty Body \npm.test(\"[PUT]::/api/v1/recipes/:recipeId - Response has empty Body\", function () {\n    pm.response.to.not.be.withBody;\n});\n"
+              "// Validate if response has empty Body \npm.test(\"[PUT]::/api/v1/recipes/:recipeId - Response has empty Body\", function () {\n    pm.response.to.have.body(\"\\\"Ok\\\"\"); \n});\n"
             ]
           }
         }

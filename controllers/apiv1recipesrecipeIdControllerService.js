@@ -10,9 +10,9 @@ module.exports.findRecipeByrecipeId = function findRecipeByrecipeId(req, res, ne
 };
 
 module.exports.deleteRecipe = function deleteRecipe(req, res, next) {
-  res.sendStatus(200);
+  res.status(200).send("Ok");
 };
 
 module.exports.updateRecipe = function updateRecipe(req, res, next) {
-  res.sendStatus(200);
+  res.status(200).send("Ok");
 };
